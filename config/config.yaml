@@ -1,0 +1,8 @@
+
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_URL: https://github.com/Vikash9570/Data/raw/main/train_data.csv
+  local_data_files: artifacts/data_ingestion/data
+  unzip_dir: artifacts/data_ingestion
