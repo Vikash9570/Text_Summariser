@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Text Summarizer</title>
+  <link rel="stylesheet" href="{{ url_for('summarize', filename='w3.css') }}">
+<body>
+  <h1>Text Summarizer</h1>
+  <form method="POST">
+    <textarea name="text" cols="5" rows="10" required="true" placeholder="Enter Text Here" style="width:60%"></textarea>
+    <button class="w3-btn w3-blue-grey" type="reset" value="reset">Clear</button>
+    <button class="w3-btn w3-blue" type="submit" value="submit">Summarize</button>
+  </form>
+    <!-- <meta charset="UTF-8"> -->
+    <!-- <title>Summarized Text</title> -->
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='w3.css') }}"> -->
+    <!-- <h1>Summarized Text</h1> -->
+    <!-- <p>Original Text: {{ text }}</p> -->
+    <p>Summarized Text: {{ summary }}</p>
+</body>
+</head>
+</html>

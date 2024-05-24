@@ -10,7 +10,6 @@ class ModelTrainer:
     def __init__(self,config: ModelTrainerConfig):
         self.config = config
 
-    
     def train(self):
         device ="cuda" if torch.cuda.is_available() else 'cpu'
         tokenizer = AutoTokenizer.from_pretrained(self.config.model_ckpt)
@@ -26,7 +25,6 @@ class ModelTrainer:
         #     evaluation_strategy='steps', eval_steps=500,save_steps =1e6,
         #     gradient_accumulation_steps =16
         # )
-
         # trainer =Trainer(model = model_pegasus, args=training_arg,
         #             tokenizer=tokenizer,data_collector=seq2seq_data_collector,
         #             train_dataset=dataset_data_csv,

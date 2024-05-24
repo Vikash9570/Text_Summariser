@@ -19,3 +19,8 @@ model_trainer:
   data_path: artifacts/data_ingestion/data.csv
   model_ckpt: google/pegasus-large
   
+
+model_evaluation: 
+  model_path: artifacts/data_trainer/pegasus-large-model
+  tokenizer_path: artifacts/data_trainer/tokenizer
+   

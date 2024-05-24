@@ -1,7 +1,7 @@
 from src.textsummarizer.constants import *
 from src.textsummarizer.utils.common import read_yaml, create_directories
 from src.textsummarizer.entity import (DataIngestionConfig)
-from src.textsummarizer.entity import DataTransformationConfig, ModelTrainerConfig
+from src.textsummarizer.entity import DataTransformationConfig, ModelTrainerConfig, ModelEvaluationConfig
 
 
 
@@ -68,3 +68,17 @@ class ConfigurationManager:
         )
 
         return model_trainer_config
+    
+
+    def get_model_evaluation_config(self)-> ModelEvaluationConfig:
+        config = self.config.model_evaluation
+        # params = self.params.TrainingArguments
+
+        model_evaluation_config = ModelEvaluationConfig(
+            model_path = config.model_path,
+            tokenizer_path = config.tokenizer_path
+        )
+
+        return model_evaluation_config
+
+

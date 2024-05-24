@@ -2,7 +2,8 @@ import os
 from src.logger import logging
 from transformers import AutoTokenizer
 # from datasets import load_dataset, load_from_disk
-from textsummarizer.entity import DataTransformationConfig
+from src.textsummarizer.entity import DataTransformationConfig
+from src.textsummarizer.config.configuration import ConfigurationManager
 
 class DataTransformation:
     def __init__(self,config: DataTransformationConfig):
