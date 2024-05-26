@@ -20,3 +20,11 @@ uvicorn
 Jinja2
 
 -e .
+
+
+# pip install sentencepiece
+# pip install transformers[sentencepiece]
+# pip install transformers
+# pip install transformers[torch]
+# pip install trainer
+# pip install torch
