@@ -25,3 +25,8 @@ To use the Text Summarizer, follow these steps:
 
 1. Ensure you have a text file or input text ready for summarization.
 2. run the python app.py and in front end paste the text and press  summarize button and below summary will be generated. 
+
+## screen shorts:
+![home page](image.png)
+
+![summarized text](image-1.png)
